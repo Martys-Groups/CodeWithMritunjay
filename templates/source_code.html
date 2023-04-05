@@ -1,0 +1,26 @@
+{% extends "base_layout.html" %}
+
+{% block body %}
+
+<div class="container">
+    <form action="/source_code" method="post">
+      <div class="mb-3">
+        <label for="Todo-title" class="form-label">Todo-title</label>
+        <input type="text" class="form-control" name="title" id="Todo-title" required>
+      </div>
+      <div class="mb-3">
+        <label for="Todo-description" class="form-label" >Todo-description</label>
+        <textarea class="form-control" name="desc" id="Todo-description" rows="4" required></textarea>
+
+      </div>
+      <button type="submit" class="btn btn-dark">Add Blog</button>
+    </form>
+</div>
+
+
+<code lang="python">
+  print("hello")
+</code>
+
+
+{% endblock %}

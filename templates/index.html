@@ -1,0 +1,147 @@
+{% extends "base_layout.html" %}
+{% block body %}
+
+<link
+rel="stylesheet"
+href="{{url_for('static',filename='styles/index.css')}}"
+/>
+<link
+rel="stylesheet"
+href="{{url_for('static',filename='styles/section-2.css')}}"
+/>
+<link
+rel="stylesheet"
+href="{{url_for('static',filename='styles/section-4.css')}}"
+/>
+<link
+rel="stylesheet"
+href="{{url_for('static',filename='styles/section-5.css')}}"
+/>
+<link
+rel="stylesheet"
+href="{{url_for('static',filename='styles/section-3.css')}}"
+/>
+
+
+<section id="sec-1" class="dark-sec">
+  <img class="dotted-img" src="{{url_for('static' , filename = 'images/dotted.png')}}" alt="">
+  <div class="leftSide">
+    <img class="hero-img" src="{{url_for('static' , filename = 'images/pics/hero.png')}}" alt="mritunjay" />
+    <img class="splash-bg" src="{{url_for('static' , filename = 'images/colors.png')}}" alt="mritunjay" />
+  </div>
+
+  <div class="RightSide">
+    <h4><span class="voilet-text">Hello !</span></h4>
+    <h2>Welcome, <span class="voilet-text">Mritunjay</span>  Here</h2>
+    <h3>a Web developer, Programmer </h3>
+    <div class="social-media">
+      <a href="#"><img src="{{url_for('static' , filename = 'images/instagram.png')}}" alt="instagram" /></a>
+      <a href="#"><img src="{{url_for('static' , filename = 'images/facebook.png')}}"" alt="Facebook" /></a>
+      <a href="#"><img src="{{url_for('static' , filename = 'images/fiverr.png')}}" alt="fiverr" /></a>
+      <a href="#"><img src="{{url_for('static' , filename = 'images/website.png')}}" alt="fiverr" /></a>
+    </div>
+  </div>
+</section>
+
+<section id="sec-2">
+  <div class="s-section-heading">
+    <h1>About <span>Me</span></h1>
+  </div>
+  <div class="main">
+    <div class="leftSide">
+      <img src="{{url_for('static', filename='images/pics/out..png')}}" alt="" />
+    </div>
+    <div class="RightSide">
+      <h3>Mritunjay <span class="voilet-text">Mishra</span> </h3>
+      <p>hello Mritunjay Here! I am an adroit coder and i am a full stack developer and a python programmer with a expeirience of 3 years working on improving my skills everyday to serve my clients a good service and i am a regular school student and </p>
+    </div>
+  </div>
+</section>
+
+<section id="sec-3">
+  <div class="p-section-heading">
+    <h1><span>AI</span> Marty</h1>
+  </div>
+  <main>
+  <div class="leftside">
+    <h4>This is</h4>
+    <h1>AI <span class="voilet-text">Marty </span>an virtual assisitant</h1>
+     <p>This is an AI model based on a theme a virtual assistant which answers the question on past data and reply's just like humans</p>
+    <button class="btn-primary">Talk With Him</button>
+   
+  </div>
+  <div class="Rightside">
+    <img src="{{url_for('static', filename = 'images/aiFace.gif')}}" alt="">
+  </div>
+</main>
+</section>
+
+
+
+
+<section id="sec-4">
+  <div class="s-section-heading">
+    <h1><span>My</span> Skills</h1>
+  </div>
+  <div class="skill-cards">
+    <div class="card">
+      <img src="{{url_for('static', filename = 'images/logo/python-skill.png')}}" alt="">
+      <h3>Python</h3>
+      <p>I have a good knowledge and understanding of python and i build only some personal projects not for freelancing but, maybe in future i would do that</p>
+    </div>
+
+    <div class="card">
+      <img src="{{url_for('static', filename = 'images/logo/html-skill.png')}}" alt="">
+      <h3>Html,Css</h3>
+      <p>I am at expert level in designing the website and i also do freelancing i use html and css and the websites, i have great knowledge in designing the websites.</p>
+    </div>
+    <div class="card">
+      <img src="{{url_for('static', filename = 'images/logo/js-skill.png')}}" alt="">
+      <h3>JavaScript</h3>
+      <p>I have a significant knowledge of javascript i embed it into my projects i have practiced it building hundreds of projects</p>
+    </div>
+  </div>
+</section>
+
+<section id="sec-5">
+  <div class="p-section-heading">
+    <h1><span>My</span> Projects</h1>
+    
+  </div>
+  <main class="project_container">
+  <template>
+    <div class="card_project">
+      <img src="" alt="">
+    </div>
+  </template>
+</main>
+<button class="load-more">Load More</button>
+</section>
+
+
+
+
+
+ 
+      
+
+
+
+
+      
+
+
+
+
+<script>
+  
+  let search_box = document.querySelector('#search')
+  let search_btn = document.querySelector('#search-btn')
+  let blog_heading = document.querySelector('.blog-title')
+
+</script>
+  {% endblock %}
+
+
+
+  

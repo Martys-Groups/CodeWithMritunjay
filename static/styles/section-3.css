@@ -1,0 +1,49 @@
+#sec-3{
+    background: #161616;
+    color: #fff;
+    padding-top: 2rem;
+}
+#sec-3 main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8rem;
+}
+#sec-3 .p-section-heading h1{
+    font-weight: 900;
+}
+#sec-3 main .RightSide{
+    width: 50%;
+    height: 100%;
+}
+#sec-3 main .Rightside img{
+    width: 500px;
+
+}
+#sec-3 main .leftside{
+    width: 50%;
+    height: 100%;
+}
+#sec-3 main .leftside h4{
+    font-size: 1rem;
+    font-weight: 700;
+}
+#sec-3 main .leftside h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+    word-spacing: 3px;
+}
+#sec-3 main .leftside h3{
+    font-size: 1.3rem;
+    font-weight: 500;
+
+}
+#sec-3 main .leftside p{
+   font-weight: 500;
+   font-size: 0.75rem;
+   color: #dfdcdc;
+   width: 50%;
+   margin-bottom: 1rem;
+   letter-spacing: 1.5px;
+}

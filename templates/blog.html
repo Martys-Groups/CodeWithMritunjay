@@ -1,0 +1,31 @@
+{% extends "base_layout.html" %} {% block body %}
+
+<link
+  rel="stylesheet"
+  href="{{url_for('static',filename='styles/blogs.css')}}"
+/>
+
+<div class="container my-5">
+  {% if allposts|length == 0 %}
+  <div class="alert alert-dark" role="alert">
+    A simple dark alert—check it out!
+  </div>
+  {% else %} 
+  {% for post in allposts %}
+  <div class="blog-box bg-light">
+    <div class="blog-head">
+      <div class="date-time">
+        <span>{{post.Date_created}}</span>
+      </div>
+    </div>
+
+    <div class="blog-details">
+      <h2>{{post.title}}</h2>
+
+      <p>{{post.Desc}}</p>
+    </div>
+    <a class="read-more-btn" href="/show_blog/{{post.Sno}}">Read More</a>
+  </div>
+
+
+{% endfor %} {%endif%} {% endblock %}

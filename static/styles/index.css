@@ -1,0 +1,155 @@
+
+header {
+    color: #fff;
+    background: #000;
+    width: 100%;
+    /* opacity: 0.6; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    height: 12.8vh;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 22;
+}
+
+header .logo img {
+    width: 50px;
+    opacity: 1;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li {
+    margin-left: 2rem;
+}
+
+header nav ul li a {
+    color: #f2f2f2;
+    font-weight: 700;
+    transition: 0.2s linear;
+}
+header nav ul li a:hover {
+    color: #7f00ff;
+}
+
+#sec-1 {
+    position: relative;
+    background: #161616;
+    height: 88vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+}
+.dotted-img{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 120px;
+    z-index: 1;
+    animation: roll 10s linear infinite alternate ;
+}
+@keyframes roll{
+    0%,100%{
+        rotate: 0deg;
+    }
+    50%{
+        rotate: 360deg;
+    }
+}
+#sec-1 .leftSide{
+    width: 50%;
+    position: relative;
+}
+#sec-1 .leftSide img {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-50% -50%);
+    height: 100%;
+    width: 100%;
+    padding-top: 2rem;
+    filter: drop-shadow(-30px 4px 10px rgba(0, 0, 0, 0.35)) ;
+}
+
+.splash-bg{
+    position: absolute;
+    z-index: 1;
+}
+.hero-img{
+    position: absolute;
+    z-index: 10;
+}
+#sec-1 .RightSide{
+    position: relative;
+    z-index: 10;
+    
+    color: #fff;
+    width: 50%;
+}
+#sec-1 .RightSide h2{
+    font-size: 2.3rem;
+    font-weight: 900;
+    margin-bottom: 0.7rem;
+
+}
+#sec-1 .RightSide h4{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+}
+#sec-1 .RightSide h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.social-media a{
+    margin-right: 2rem;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+
+}
+.social-media a:hover{
+    animation: breadth 0.5s linear infinite;
+    border: 2px solid #7f00ff;
+
+}
+@keyframes breadth{
+    0%{
+        transform: scale(1);
+        
+    }
+    50%{
+        transform: scale(1.1);
+
+        
+    }
+    100%{
+        transform: scale(1);
+        
+    }
+}
+.social-media a img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+

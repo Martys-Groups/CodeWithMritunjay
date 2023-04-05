@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+html{
+    scroll-behavior: smooth;
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.p-section-heading h1{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.p-section-heading span{
+   color: #7f00ff;
+}
+.s-section-heading h1{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #000;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.s-section-heading span{
+   color: #7f00ff;
+}
+.leftSide{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.RightSide{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+section{
+    width: 100%;
+
+}
+.voilet-text{
+    color: #7f00ff;
+}
+.btn-primary{
+    background: #7f00ff;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    background-color: #fff;
+    color: #000;
+}

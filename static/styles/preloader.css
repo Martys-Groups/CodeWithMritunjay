@@ -1,0 +1,130 @@
+.preloader{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 11;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    position: relative;
+  }
+  
+  .loader:before {
+    content: '';
+    width: 70px;
+    height: 5px;
+    background: #f0808050;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    border-radius: 50%;
+    animation: shadow324 0.5s linear infinite;
+  }
+  
+  .loader:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    /* background: #f08080; */
+    background: url(../images/dotted.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    animation: jump7456 0.5s linear infinite;
+  }
+  
+  @keyframes jump7456 {
+    15% {
+      border-bottom-right-radius: 3px;
+    }
+  
+    25% {
+      transform: translateY(9px) rotate(22.5deg);
+    }
+  
+    50% {
+      transform: translateY(18px) scale(1, .9) rotate(45deg);
+      border-bottom-right-radius: 40px;
+    }
+  
+    75% {
+      transform: translateY(9px) rotate(67.5deg);
+    }
+  
+    100% {
+      transform: translateY(0) rotate(90deg);
+    }
+  }
+  
+  @keyframes shadow324 {
+  
+    0%,
+      100% {
+      transform: scale(1, 1);
+    }
+  
+    50% {
+      transform: scale(1.2, 1);
+    }
+  }
+
+
+
+  /* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3em;
+  height: 1.5em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  --background: #7f00ff;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background);
+  transition: .5s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 0.9em;
+  width:0.9em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 14%;
+  box-shadow: inset 8px -4px 0px 0px #fff;
+  background: var(--background);
+  transition: .5s;
+}
+
+input:checked + .slider {
+  background-color: #522ba7;
+}
+
+input:checked + .slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 15px -4px 0px 15px #fff;
+}

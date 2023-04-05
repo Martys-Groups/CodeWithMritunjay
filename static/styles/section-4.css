@@ -1,0 +1,48 @@
+#sec-4{
+    background: #f2f2f2;
+    padding: 2rem 5rem;
+    padding-bottom: 6.3rem;
+
+}
+.skill-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 4rem;
+    width: 100%;
+    place-items: center;
+}
+.card{
+    height: 350px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+    flex-direction: column;
+    box-shadow: 10px;
+    background-color: #fff;
+    padding: 2rem ;
+    border-radius: 10px;
+    box-shadow: 20px 10px 18px -8px rgba(0,0,0,0.37);
+
+
+    
+
+}
+.card:hover{
+    color: #fff;
+    background-color: #161616;
+
+
+}
+.card img{
+    height: 70px;
+    width: 70px;
+}
+.card h3{
+    margin: 0.3rem 0;
+}
+.card p{
+    text-align: center;
+    font-size: 0.9rem;
+}
